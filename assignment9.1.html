@@ -1,0 +1,28 @@
+<!-- This assignment helps to master the concept of JS objects and JS functions -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Assignment 9.1</title>
+</head>
+<body>
+    <script>
+        //Object constructor functions
+        function createObject() {
+            var myObj = new Object();
+            myObj.name = "Bala";
+            myObj.height = 180;
+            myObj.aboutYourSelf = function () {
+                return "I am " + this.name + ". I am " + this.height + " cm in height";
+            }
+            return myObj;
+        }
+
+        var me = createObject();
+        console.log(me.aboutYourSelf())
+    </script>
+</body>
+</html>
+
